@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         lista.add(arrayListOf("2","Pawel","Nowak"))
         lista.add(arrayListOf("3","Piotr","Sliwicki"))
 
-        var url = ""
+        var url = "http://127.0.0.1:8080/api/users"
 
         var recycler: RecyclerView = this.findViewById<RecyclerView>(R.id.recycler)
         recycler.adapter = Adapter(lista)
